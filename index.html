@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Little Birthday Surprise ✨</title>
+  <meta name="description" content="A little birthday surprise.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floating-hearts" aria-hidden="true"></div>
+
+  <main>
+    <section class="screen intro active" id="intro">
+      <div class="glow"></div>
+      <p class="eyebrow">A little something for you</p>
+      <h1>Hey, Shruti <span>✨</span></h1>
+      <p class="sub">I made a tiny website for your birthday.<br>So... don't close it yet 👀</p>
+      <button class="primary" id="openBtn">Open your gift 🎁</button>
+    </section>
+
+    <section class="screen" id="birthday">
+      <div class="card">
+        <div class="cake">🎂</div>
+        <p class="eyebrow">Today is your day</p>
+        <h2>Happy Birthday, Shruti! 💗</h2>
+        <p class="message">
+          I hope today gives you a hundred reasons to smile,
+          a few unexpected happy moments, and memories you'll
+          want to keep forever.
+        </p>
+        <button class="primary" id="littleBtn">There's more ✨</button>
+      </div>
+    </section>
+
+    <section class="screen" id="little">
+      <p class="eyebrow">A few little things</p>
+      <h2>Tap the cards 👇</h2>
+      <div class="cards">
+        <button class="mini-card" data-message="Your smile can make an ordinary moment feel a lot better.">🌷<span>One thing</span></button>
+        <button class="mini-card" data-message="You have a way of making moments feel special without even trying.">✨<span>Another thing</span></button>
+        <button class="mini-card" data-message="I hope you always have people around you who make you feel as appreciated as you deserve.">💫<span>One more</span></button>
+      </div>
+      <div class="reveal" id="reveal" aria-live="polite"></div>
+      <button class="ghost" id="finalBtn">One last thing →</button>
+    </section>
+
+    <section class="screen" id="final">
+      <div class="final-card">
+        <div class="sparkle">✦</div>
+        <p class="eyebrow">Before you go...</p>
+        <h2>Keep smiling. Always. 💗</h2>
+        <p>
+          No big speech. No complicated words.
+          Just a simple wish that this year brings you
+          lots of happiness, good people, exciting moments,
+          and everything you're hoping for.
+        </p>
+        <p class="signature">— Samyak</p>
+        <button class="primary" id="againBtn">Replay ✨</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalText">
+    <div class="modal-box">
+      <button class="close" id="closeModal" aria-label="Close">×</button>
+      <div class="modal-icon">💌</div>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
