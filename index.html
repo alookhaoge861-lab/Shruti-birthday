@@ -56,8 +56,23 @@
           lots of happiness, good people, exciting moments,
           and everything you're hoping for.
         </p>
-        <p class="signature">— Samyak</p>
         <button class="primary" id="againBtn">Replay ✨</button>
+
+      <div class="feedback-wrap">
+        <p class="eyebrow">Before you go...</p>
+        <h2>Did you like it? 💌</h2>
+        <p class="feedback-sub">Leave a little message. I'd love to know what you think.</p>
+
+        <!-- Replace YOUR_FORMSPREE_ID with your Formspree form ID -->
+        <form class="feedback-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+          <input type="hidden" name="subject" value="Birthday website message 💌">
+          <input type="text" name="name" placeholder="Your name (optional)">
+          <textarea name="message" rows="4" placeholder="Write something..." required></textarea>
+          <button class="primary" type="submit">Send message 💗</button>
+        </form>
+
+        <p class="form-note">Your message is sent privately to the website owner.</p>
+      </div>
       </div>
     </section>
   </main>
