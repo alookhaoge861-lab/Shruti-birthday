@@ -253,3 +253,59 @@ button {
   h1 { font-size: 3.25rem; }
   h2 { font-size: 2.55rem; }
 }
+
+
+.feedback-wrap {
+  width: min(92vw, 650px);
+  margin-top: 34px;
+  padding: 30px 22px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.62);
+  border-radius: 28px;
+}
+
+.feedback-sub {
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 12px auto 20px;
+}
+
+.feedback-form {
+  display: grid;
+  gap: 12px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 14px 15px;
+  font: inherit;
+  color: var(--text);
+  background: rgba(255,255,255,.85);
+  outline: none;
+}
+
+.feedback-form textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border-color: rgba(200,93,131,.45);
+  box-shadow: 0 0 0 4px rgba(200,93,131,.08);
+}
+
+.feedback-form .primary {
+  justify-self: center;
+}
+
+.form-note {
+  font-size: .72rem;
+  color: var(--muted);
+  margin: 14px 0 0;
+}
